@@ -4,12 +4,12 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("█████████\n███████");
+
             // Create and configure board
-            var board = new Board(12, 12);
+            var board = new Board(50, 25);
             board.SetRandomCell(new Apple());
-            board.SetRandomCell(new Wall());
-            board.SetRandomCell(new Wall());
-            board.SetRandomCell(new Wall());
+            Console.WriteLine("█████████\n███████");
 
             // Create and run game
             var game = new Game(board);

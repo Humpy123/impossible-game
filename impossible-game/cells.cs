@@ -15,8 +15,8 @@ namespace impossible_game
     public class Empty : ICell
     {
         public void OnEnter(Board board) { }
-        public char Symbol => '·';
-        public ConsoleColor Color => ConsoleColor.Gray;
+        public char Symbol => '█';
+        public ConsoleColor Color => ConsoleColor.White;
     }
     public class Apple : ICell
     {
@@ -27,13 +27,13 @@ namespace impossible_game
             board.SetRandomCell(new Apple());
         }
 
-        public char Symbol => '•';
+        public char Symbol => 'A';
         public ConsoleColor Color => ConsoleColor.Red;
     }
     public class Wall : ICell
     {
         public void OnEnter(Board board) => board.KillSnake();
-        public char Symbol => '▓';
-        public ConsoleColor Color => ConsoleColor.Gray;
+        public char Symbol => '█';
+        public ConsoleColor Color => ConsoleColor.Cyan;
     }
 }

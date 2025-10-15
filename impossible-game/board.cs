@@ -76,7 +76,6 @@ namespace impossible_game
                         var cell = cells[x, y];
                         Print(cell.Symbol.ToString(), cell.Color);
                     }
-                    Console.Write(" ");
                 }
                 Console.WriteLine();
             }
